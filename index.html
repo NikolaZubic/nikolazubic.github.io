@@ -1,1 +1,299 @@
-Hello World
+<!DOCTYPE html>
+
+<head>
+    <title>Nikola Zubić</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script src="https://kit.fontawesome.com/8c9171bec9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="icon" href="/assets/Portfolio Icon.jfif">
+</head>
+
+
+<body>
+    <!-- GRADIANT EFFECT ON TOP -->
+<!--    <h1 id="main-heading" class="gradiant-effect"></h1>-->
+    <!-- MAIN DIVIDER WHICH CONTAINS ALL THE OTHER CATEGORY-->
+    <div id="main-box" style=" width: 1034px;">
+        <!-- ABOUT ME SECTION -->
+        <div class="d-flex justify-content-center container-xxl" id="about-me">
+            <div class="d-flex">
+                <div class="flex-shrink-1">
+                    <!-- IMAGE OF THE PERSON-->
+                    <img src="assets/me.jpg" alt="image">
+                </div>
+                <div class="flex-grow-1 ms-5 name-heading">
+                    <!-- NAME OF THE PERSON -->
+                    <h1>Nikola Zubić / Никола Зубић</h1>
+                    <!-- ABOUT HIM -->
+                    <p style="text-align: justify">
+                        Hello dear visitor,
+                        <br>
+                        <br>
+                        I am a Ph.D. student with the <a href="https://rpg.ifi.uzh.ch/">Robotics and Perception Group (RPG)</a>, supervised by  <a href="https://scholar.google.com/citations?user=SC9wV2kAAAAJ&hl=en">Professor Davide Scaramuzza</a> (<a href="https://www.uzh.ch/en.html">University of Zurich</a>) and Associated Researcher at <a href="https://ai.ethz.ch/">ETH AI Center</a>. My research focuses on Sequence Modeling and Efficient Neural Network Architectures for Event-based Vision. 
+                        Incorporating sequence modeling into event-based vision systems promises to significantly enhance the temporal resolution and predictive accuracy of these networks, paving the way for breakthroughs in dynamic environments where rapid and precise visual processing is crucial, such as in advanced robotics and real-time surveillance.
+                        <br>
+                        <br>
+                        Before my Ph.D., I obtained a Master's Degree in Computer Science from <a href="https://www.uns.ac.rs/index.php/en/">University of Novi Sad</a> while interning at the <a href="https://www.cam.ac.uk/">University of Cambridge</a> under the supervision of <a href="https://www.cl.cam.ac.uk/~pl219/">Professor Pietro Lio</a>.
+                        <br>
+                        <br>
+                        If you'd like to have a chat, feel free to get in touch:
+                    </p>
+                    <br>
+                <div class="row">
+     <div class="col-4 text-center"><a href="mailto:zubic@ifi.uzh.ch"><i class="fa-regular fa-envelope fa-2xl" data-tippy-content="E-Mail"></i></a></div>
+     <div class="col-4 text-center"><a href="https://www.linkedin.com/in/nikola-zubi%C4%87-50458b18b/"><i class="fa-brands fa-linkedin fa-2xl" data-tippy-content="LinkedIn"></i></a></div>
+    <div class="col-4 text-center"><a href="https://github.com/nikolazubic/"><i class="fa-brands fa-github fa-2xl" data-tippy-content="GitHub"></i></a></div>
+</div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container-xxl heading" style=" width: 1034px;">
+            <h1>PUBLICATIONS (click on publication for more details)</h1>
+            <span style="font-size: small;">*only first author publications are included*</span>
+            <br><br>
+            <div class="col-4 text-left">
+              <a href="https://scholar.google.com/citations?user=bUEKG24AAAAJ&hl=en">
+                  <img src="assets/googlescholar.jpg" alt="GoogleScholar" style="width: 40px; height: 40px;">
+              </a>&nbsp; for all publications click on the left icon
+          </div>
+          
+          </div>
+        <br>
+        <!-- PROJECT THAT HE OWNS -->
+        <div class="container-xxl" style="width: 1034px;" id="projects">
+            <div class="row row-cols-1 g-4">
+
+                <div class="col">
+                    <div class="card project-card mb-1">
+                      <div class="row g-0">
+                        <div class="col-5">
+                            <img src="assets/ergo12_teaser.png" class="img-fluid">
+                        </div>
+                        <div class="col-7">
+                          <div class="card-body">
+                            <h5 class="card-title">From Chaos Comes Order: Ordering Event Representations for Object Recognition and Detection</h5>
+                            <p class="project-card-text"><small class="text-muted">ICCV 2023</small></p>
+                              <a href="projects/ergo12/ergo12.html" class="stretched-link hidden"></a>
+                            <p class="project-card-text">
+                              Selecting dense event representations for deep neural networks is exceedingly slow since it involves training a neural network for each representation and selecting the best one based on the validation score. In this work, we eliminate this bottleneck by selecting the representation based on the Gromov-Wasserstein Discrepancy (GWD) on the validation set. This metric is 200 times faster to compute and preserves the task performance ranking of event representations across multiple representations, network backbones, datasets and tasks. We use it to, for the first time, perform a hyperparameter search on a large family of event representations, revealing new and powerful event representations that exceed the state-of-the-art. Our optimized representations outperform existing representations by 1.7 mAP on the 1 Mpx dataset and 0.3 mAP on the Gen1 dataset, two established object detection benchmarks, and reach a 3.8% higher classification score on the mini N-ImageNet benchmark. Moreover, we outperform state-of-the-art by 2.1 mAP on Gen1 and state-of-the-art feed-forward methods by 6.0 mAP on the 1 Mpx datasets. This work opens a new unexplored field of explicit representation optimization for event-based learning.
+                            </p>
+                            <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card project-card mb-1">
+                      <div class="row g-0">
+                        <div class="col-5">
+                            <img src="assets/aiai2021.png" class="img-fluid">
+                        </div>
+                        <div class="col-7">
+                          <div class="card-body">
+                            <h5 class="card-title">An Effective Loss Function for Generating 3D Models from Single 2D Image Without Rendering</h5>
+                            <p class="project-card-text"><small class="text-muted">AIAI 2021 & Springer</small></p>
+                            <a href="projects/aiai2021/aiai2021.html" class="stretched-link hidden"></a>
+                            <p class="project-card-text">
+                              Differentiable rendering is a very successful technique that applies to a Single-View 3D Reconstruction. Current renderers use losses based on pixels between a rendered image of some 3D reconstructed object and ground-truth images from given matched viewpoints to optimise parameters of the 3D shape. These models require a rendering step, along with visibility handling and evaluation of the shading model. The main goal of this paper is to demonstrate that we can avoid these steps and still get reconstruction results as other state-of-the-art models that are equal or even better than existing category-specific reconstruction methods. First, we use the same CNN architecture for the prediction of a point cloud shape and pose prediction like the one used by Insafutdinov & Dosovitskiy. Secondly, we propose the novel effective loss function that evaluates how well the projections of reconstructed 3D point clouds cover the ground truth object's silhouette. Then we use Poisson Surface Reconstruction to transform the reconstructed point cloud into a 3D mesh. Finally, we perform a GAN-based texture mapping on a particular 3D mesh and produce a textured 3D mesh from a single 2D image. We evaluate our method on different datasets (including ShapeNet, CUB-200-2011, and Pascal3D+) and achieve state-of-the-art results, outperforming all the other supervised and unsupervised methods and 3D representations, all in terms of performance, accuracy, and training time.
+                            </p>
+                            <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!--
+                <div class="col">
+                    <div class="card project-card mb-1">
+                      <div class="row g-0">
+                        <div class="col-5">
+                            <img src="assets/fashion_attribute_pred_teaser.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-7">
+                          <div class="card-body">
+                            <h5 class="card-title">Visual Fashion Attribute Prediction</h5>
+                              <a href="https://github.com/malteprinzler/VisualFashionAttributePrediction" class="stretched-link hidden"></a>
+                            <p class="project-card-text">Internship project on vision-based regression of descriptive features for apparel products. Given an image of a garment, a 2D convolutional network extracts scores for a predefined set of attributes. This allows for attribute-based product similarity matching and recommendation applications. This project was part of Kaggle iMaterialist Challenge (Fashion) at FCVC5. The code is publicly available through GitHub.</p>
+                            <br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container-xxl heading" style=" width: 1034px;">
+            <h1>EXPERIENCE</h1>
+        </div>
+        <br>
+        <div class="container-xxl" style="width: 1034px;">
+            <div class="row row-cols-1 g-4">
+                <div class="col">
+                    <div class="card experience-card mb-1">
+                      <div class="row g-0">
+                        <div class="col-5">
+                            <div class="col d-flex align-items-center justify-content-center text-center" style="align-items: center; height: 200px">
+                                <a href="https://ai.ethz.ch/"><img src="assets/eth_ai_center.png" class="img-fluid" style="width: 75%"></a>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                          <div class="card-body">
+                            <h5 class="card-title">Associated Researcher</h5>
+                              <p class="card-text"><small class="text-muted">ETH AI Center<br>Since Apr 2023</small></p>
+                            <p class="card-text"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card experience-card mb-1">
+                      <div class="row g-0">
+                        <div class="col-5">
+                            <div class="col d-flex align-items-center justify-content-center text-center" style="align-items: center; height: 160px">
+                                <a href="https://www.mit.edu/"><img src="assets/MIT-Logo.png" class="img-fluid" style="width: 60%"></a>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                          <div class="card-body">
+                            <h5 class="card-title">Research Intern</h5>
+                              <p class="card-text"><small class="text-muted">Massachusetts Institute of Technology (Cambridge, Massachusetts, United States)<br>Jun 2022 - Jul 2022</small></p>
+                              <p class="card-text">Worked on Deep Reinforcement Learning and Computer Vision, the project was on Policy-Guided Planning with application in the Real-World Robotics</a>.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card experience-card mb-1">
+                      <div class="row g-0">
+                        <div class="col-5">
+                            <div class="col d-flex align-items-center justify-content-center text-center" style="align-items: center; height: 200px">
+                                <a href="https://wonderdynamics.com/"><img src="assets/wonder-dynamics.png" class="img-fluid" style="width: 60%"></a>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                          <div class="card-body">
+                            <h5 class="card-title">Machine Learning Researcher</h5>
+                              <p class="card-text"><small class="text-muted">Wonder Dynamics (Los Angeles, California, United States)<br>Nov 2021 - May 2022</small></p>
+                            <p class="card-text">
+                              <ul>
+                                <li>Work on research and design of cutting-edge machine learning algorithms in the fields of visual effects, motion capturing, rendering, as well as in many other movie production areas</li>
+                                <li>Work on cutting-edge Computer Graphics techniques, Neural Rendering, and Numerical Optimization</li>
+                                <li>Design and build various neural network architectures: CNNs, RNNs, Transformers, Autoencoders</li>
+                                <li>Create tools and processes that aid in the production of visual effects by applying state-of-the-art computer vision and graphics algorithms</li>
+                            </ul>                            
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card experience-card mb-1">
+                      <div class="row g-0">
+                        <div class="col-5">
+                            <div class="col d-flex align-items-center justify-content-center" style="align-items: center; height: 200px">
+                                <a href="https://www.cam.ac.uk/"><img src="assets/cambridge_logo.jpg" class="img-fluid"></a>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                          <div class="card-body">
+                            <h5 class="card-title">Research Intern</h5>
+                              <p class="card-text"><small class="text-muted">University of Cambridge (Cambridge, England, United Kingdom)<br>Oct 2020 - Jun 2021</small></p>
+                            <p class="card-text">Research Intern Apprentice in the Computer Laboratory at the University of Cambridge. This internship under the supervision of Full Professor Pietro Lio resulted in the publication of a paper which I presented at the AIAI 2021 conference. Paper is a part of the book "Artificial Intelligence Applications and Innovations" by Springer.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card experience-card mb-1">
+                      <div class="row g-0">
+                        <div class="col-5">
+                            <div class="col d-flex align-items-center justify-content-center text-center" style="align-items: center; height: 200px">
+                                <a href="https://wellfound.com/company/esoter-studio"><img src="assets/esoter.jpg" class="img-fluid" style="width: 35%"></a>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                          <div class="card-body">
+                            <h5 class="card-title">Software Engineer</h5>
+                              <p class="card-text"><small class="text-muted">Esoter Studio (Novi Sad, Serbia)<br>Aug 2019 - Sep 2019</small></p>
+                            <p class="card-text">Application of machine learning in game development.</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card experience-card mb-1">
+                      <div class="row g-0">
+                        <div class="col-5">
+                            <div class="col d-flex align-items-center justify-content-center text-center" style="align-items: center; height: 200px">
+                                <a href="https://www.rt-rk.com/"><img src="assets/RT-RK.png" class="img-fluid" style="width: 60%"></a>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                          <div class="card-body">
+                            <h5 class="card-title">Student Assistant</h5>
+                              <p class="card-text"><small class="text-muted">RT-RK (Novi Sad, Serbia)<br>Feb 2019 - Jun 2019</small></p>
+                            <p class="card-text">Student demonstrator for courses: "Parallel Programming" and "System Programming 1".</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1 class="gradiant-effect" id="connect"> GET IN TOUCH </h1>
+        <br>
+        <br>
+        <div class="row">
+    <div class="col-3"></div>
+     <div class="col-2 text-center"><a href="mailto:zubic@ifi.uzh.ch"><i class="fa-regular fa-envelope fa-2xl" data-tippy-content="E-Mail"></i></a></div>
+     <div class="col-2 text-center"><a href="https://www.linkedin.com/in/nikola-zubi%C4%87-50458b18b/"><i class="fa-brands fa-linkedin fa-2xl" data-tippy-content="LinkedIn"></i></a></div>
+    <div class="col-2 text-center"><a href="https://github.com/nikolazubic/"><i class="fa-brands fa-github fa-2xl" data-tippy-content="GitHub"></i></a></div>
+    <div class="col-3"></div>
+</div>
+        <br><br>
+        <br><br>
+
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+        <script>
+            tippy('[data-tippy-content]', {
+                arrow: false,
+                inertia: true,
+                animation: 'scale',
+                theme: 'gradiant',
+                placement: 'bottom',
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
