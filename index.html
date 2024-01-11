@@ -1,299 +1,694 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Nikola Zubić</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikola Zubić</title>
 
-    <script src="https://kit.fontawesome.com/8c9171bec9.js" crossorigin="anonymous"></script>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
-    <link rel="icon" href="/assets/Portfolio Icon.jfif">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-    <!-- GRADIANT EFFECT ON TOP -->
-<!--    <h1 id="main-heading" class="gradiant-effect"></h1>-->
-    <!-- MAIN DIVIDER WHICH CONTAINS ALL THE OTHER CATEGORY-->
-    <div id="main-box" style=" width: 1034px;">
-        <!-- ABOUT ME SECTION -->
-        <div class="d-flex justify-content-center container-xxl" id="about-me">
-            <div class="d-flex">
-                <div class="flex-shrink-1">
-                    <!-- IMAGE OF THE PERSON-->
-                    <img src="assets/me.jpg" alt="image">
-                </div>
-                <div class="flex-grow-1 ms-5 name-heading">
-                    <!-- NAME OF THE PERSON -->
-                    <h1>Nikola Zubić / Никола Зубић</h1>
-                    <!-- ABOUT HIM -->
-                    <p style="text-align: justify">
-                        Hello dear visitor,
-                        <br>
-                        <br>
-                        I am a Ph.D. student with the <a href="https://rpg.ifi.uzh.ch/">Robotics and Perception Group (RPG)</a>, supervised by  <a href="https://scholar.google.com/citations?user=SC9wV2kAAAAJ&hl=en">Professor Davide Scaramuzza</a> (<a href="https://www.uzh.ch/en.html">University of Zurich</a>) and Associated Researcher at <a href="https://ai.ethz.ch/">ETH AI Center</a>. My research focuses on Sequence Modeling and Efficient Neural Network Architectures for Event-based Vision. 
-                        Incorporating sequence modeling into event-based vision systems promises to significantly enhance the temporal resolution and predictive accuracy of these networks, paving the way for breakthroughs in dynamic environments where rapid and precise visual processing is crucial, such as in advanced robotics and real-time surveillance.
-                        <br>
-                        <br>
-                        Before my Ph.D., I obtained a Master's Degree in Computer Science from <a href="https://www.uns.ac.rs/index.php/en/">University of Novi Sad</a> while interning at the <a href="https://www.cam.ac.uk/">University of Cambridge</a> under the supervision of <a href="https://www.cl.cam.ac.uk/~pl219/">Professor Pietro Lio</a>.
-                        <br>
-                        <br>
-                        If you'd like to have a chat, feel free to get in touch:
-                    </p>
-                    <br>
-                <div class="row">
-     <div class="col-4 text-center"><a href="mailto:zubic@ifi.uzh.ch"><i class="fa-regular fa-envelope fa-2xl" data-tippy-content="E-Mail"></i></a></div>
-     <div class="col-4 text-center"><a href="https://www.linkedin.com/in/nikola-zubi%C4%87-50458b18b/"><i class="fa-brands fa-linkedin fa-2xl" data-tippy-content="LinkedIn"></i></a></div>
-    <div class="col-4 text-center"><a href="https://github.com/nikolazubic/"><i class="fa-brands fa-github fa-2xl" data-tippy-content="GitHub"></i></a></div>
-</div>
-                </div>
-            </div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/me.jpg" alt="Nikola Zubić" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Nikola Zubić">Nikola Zubić <br>(Никола Зубић)</h1>
+
+          <p class="title">Ph.D. student</p>
         </div>
 
-        <br>
-        <br>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-        <div class="container-xxl heading" style=" width: 1034px;">
-            <h1>PUBLICATIONS (click on publication for more details)</h1>
-            <span style="font-size: small;">*only first author publications are included*</span>
-            <br><br>
-            <div class="col-4 text-left">
-              <a href="https://scholar.google.com/citations?user=bUEKG24AAAAJ&hl=en">
-                  <img src="assets/googlescholar.jpg" alt="GoogleScholar" style="width: 40px; height: 40px;">
-              </a>&nbsp; for all publications click on the left icon
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">zubic@ifi.uzh.ch</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">December 13, 1997</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Zürich, Switzerland 🇨🇭</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Born in</p>
+
+              <address>Banja Luka, Republic of Srpska, Bosnia and Herzegovina 🇷🇸🇧🇦</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="mailto:zubic@ifi.uzh.ch" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/nikola-zubi%C4%87-50458b18b/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/nikolazubic/" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=bUEKG24AAAAJ&hl=en/" class="social-link">
+              <ion-icon name="school-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a Ph.D. student with the <a style="display: inline-block; white-space: nowrap;" href="https://rpg.ifi.uzh.ch/">Robotics and Perception Group (RPG)</a>, supervised by  <a style="display: inline-block; white-space: nowrap;" href="https://scholar.google.com/citations?user=SC9wV2kAAAAJ&hl=en">Professor Davide Scaramuzza</a> <br>(<a style="display: inline-block; white-space: nowrap;" href="https://www.uzh.ch/en.html">University of Zurich</a>) and Associated Researcher at <a style="display: inline-block; white-space: nowrap;" href="https://ai.ethz.ch/">ETH AI Center</a>. My research focuses on Sequence Modeling and Efficient Neural Network Architectures for Event-based Vision. 
+            Incorporating sequence modeling into event-based vision systems promises to significantly enhance the temporal resolution and predictive accuracy of these networks, paving the way for breakthroughs in dynamic environments where rapid and precise visual processing is crucial, such as in advanced robotics and real-time surveillance.
+
+          </p>
+
+          <p>
+            Before my Ph.D., I obtained a Master's Degree in Computer Science from <a style="display: inline-block; white-space: nowrap;" href="https://www.uns.ac.rs/index.php/en/">University of Novi Sad</a> while interning at the <a style="display: inline-block; white-space: nowrap;" href="https://www.cam.ac.uk/">University of Cambridge</a> under the supervision of <a style="display: inline-block; white-space: nowrap;" href="https://www.cl.cam.ac.uk/~pl219/">Professor Pietro Lio</a>.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm excited about</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/sequence_modeling.webp
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Sequence Modeling</h4>
+
+                <p class="service-item-text">
+                  Investigating alternative neural network architectures that offer a solution to the quadratic complexity issue inherent in Transformer models as sequence length increases.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/event_based_vision.webp" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Event-based Vision</h4>
+
+                <p class="service-item-text">
+                  Applying sequence modeling and efficient neural network architectures to computer vision systems utilizing event cameras, known for their efficiency in dynamic and high-speed scenarios.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/sports.webp" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Sports</h4>
+
+                <p class="service-item-text">
+                  I enjoy challenging myself with a variety of physical activities, such as boxing, engaging in CrossFit workouts, and dedicated fitness training sessions.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/biohacking.webp" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Biohacking</h4>
+
+                <p class="service-item-text">
+                  Enthusiastic about nutrition and biohacking to enhance personal energy levels and overall well-being
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
           </div>
-          
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Associated Researcher (ETH AI Center)</h4>
+
+              <span>Apr 2023 — Present</span>
+
+              <p class="timeline-text">
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Intern (Massachusetts Institute of Technology)</h4>
+
+              <span>Jun 2022 - Jul 2022 (2 mos)</span>
+
+              <p class="timeline-text">
+                Worked on Deep Reinforcement Learning and Computer Vision, the project was on Policy-Guided Planning with application in the Real-World Robotics.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Machine Learning Researcher (Wonder Dynamics)</h4>
+
+              <span>Nov 2021 - May 2022 (7 mos)</span>
+
+              <p class="timeline-text">
+                AI-based Computer Vision and Graphics with headquarters in Los Angeles, California. Steven Spielberg, Robert Schwab, Antonio Torralba, Gregory Trattner, Angjoo Kanazawa and others in Advisory Board.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Intern (University of Cambridge)</h4>
+
+              <span>Oct 2020 - Jun 2021 (9 mos)</span>
+
+              <p class="timeline-text">
+                Research Intern Apprentice in the Computer Laboratory at the University of Cambridge. This internship under the supervision of Full Professor Pietro Lio resulted in the publication of a paper which I presented at the AIAI 2021 conference. Paper is a part of the book "Artificial Intelligence Applications and Innovations" by Springer.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer (Esoter Studio)</h4>
+
+              <span>Aug 2019 - Sep 2019 (2 mos)</span>
+
+              <p class="timeline-text">
+                Application of machine learning in game development.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Student Assistant (RT-RK Institute)</h4>
+
+              <span>Feb 2019 - Jun 2019 (5 mos)</span>
+
+              <p class="timeline-text">
+                Student demonstrator for courses: "Parallel Programming" and "System Programming 1".
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
           </div>
-        <br>
-        <!-- PROJECT THAT HE OWNS -->
-        <div class="container-xxl" style="width: 1034px;" id="projects">
-            <div class="row row-cols-1 g-4">
 
-                <div class="col">
-                    <div class="card project-card mb-1">
-                      <div class="row g-0">
-                        <div class="col-5">
-                            <img src="assets/ergo12_teaser.png" class="img-fluid">
-                        </div>
-                        <div class="col-7">
-                          <div class="card-body">
-                            <h5 class="card-title">From Chaos Comes Order: Ordering Event Representations for Object Recognition and Detection</h5>
-                            <p class="project-card-text"><small class="text-muted">ICCV 2023</small></p>
-                              <a href="projects/ergo12/ergo12.html" class="stretched-link hidden"></a>
-                            <p class="project-card-text">
-                              Selecting dense event representations for deep neural networks is exceedingly slow since it involves training a neural network for each representation and selecting the best one based on the validation score. In this work, we eliminate this bottleneck by selecting the representation based on the Gromov-Wasserstein Discrepancy (GWD) on the validation set. This metric is 200 times faster to compute and preserves the task performance ranking of event representations across multiple representations, network backbones, datasets and tasks. We use it to, for the first time, perform a hyperparameter search on a large family of event representations, revealing new and powerful event representations that exceed the state-of-the-art. Our optimized representations outperform existing representations by 1.7 mAP on the 1 Mpx dataset and 0.3 mAP on the Gen1 dataset, two established object detection benchmarks, and reach a 3.8% higher classification score on the mini N-ImageNet benchmark. Moreover, we outperform state-of-the-art by 2.1 mAP on Gen1 and state-of-the-art feed-forward methods by 6.0 mAP on the 1 Mpx datasets. This work opens a new unexplored field of explicit representation optimization for event-based learning.
-                            </p>
-                            <br>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                
-                <div class="col">
-                    <div class="card project-card mb-1">
-                      <div class="row g-0">
-                        <div class="col-5">
-                            <img src="assets/aiai2021.png" class="img-fluid">
-                        </div>
-                        <div class="col-7">
-                          <div class="card-body">
-                            <h5 class="card-title">An Effective Loss Function for Generating 3D Models from Single 2D Image Without Rendering</h5>
-                            <p class="project-card-text"><small class="text-muted">AIAI 2021 & Springer</small></p>
-                            <a href="projects/aiai2021/aiai2021.html" class="stretched-link hidden"></a>
-                            <p class="project-card-text">
-                              Differentiable rendering is a very successful technique that applies to a Single-View 3D Reconstruction. Current renderers use losses based on pixels between a rendered image of some 3D reconstructed object and ground-truth images from given matched viewpoints to optimise parameters of the 3D shape. These models require a rendering step, along with visibility handling and evaluation of the shading model. The main goal of this paper is to demonstrate that we can avoid these steps and still get reconstruction results as other state-of-the-art models that are equal or even better than existing category-specific reconstruction methods. First, we use the same CNN architecture for the prediction of a point cloud shape and pose prediction like the one used by Insafutdinov & Dosovitskiy. Secondly, we propose the novel effective loss function that evaluates how well the projections of reconstructed 3D point clouds cover the ground truth object's silhouette. Then we use Poisson Surface Reconstruction to transform the reconstructed point cloud into a 3D mesh. Finally, we perform a GAN-based texture mapping on a particular 3D mesh and produce a textured 3D mesh from a single 2D image. We evaluate our method on different datasets (including ShapeNet, CUB-200-2011, and Pascal3D+) and achieve state-of-the-art results, outperforming all the other supervised and unsupervised methods and 3D representations, all in terms of performance, accuracy, and training time.
-                            </p>
-                            <br>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <!--
-                <div class="col">
-                    <div class="card project-card mb-1">
-                      <div class="row g-0">
-                        <div class="col-5">
-                            <img src="assets/fashion_attribute_pred_teaser.jpg" class="img-fluid">
-                        </div>
-                        <div class="col-7">
-                          <div class="card-body">
-                            <h5 class="card-title">Visual Fashion Attribute Prediction</h5>
-                              <a href="https://github.com/malteprinzler/VisualFashionAttributePrediction" class="stretched-link hidden"></a>
-                            <p class="project-card-text">Internship project on vision-based regression of descriptive features for apparel products. Given an image of a garment, a 2D convolutional network extracts scores for a predefined set of attributes. This allows for attribute-based product similarity matching and recommendation applications. This project was part of Kaggle iMaterialist Challenge (Fashion) at FCVC5. The code is publicly available through GitHub.</p>
-                            <br>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div> -->
-            </div>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Zurich</h4>
+
+              <span>Sep 2022 - Present</span>
+
+              <p class="timeline-text">
+                Department of Informatics, Institute of Neuroinformatics, Robotics and Perception Group led by Prof. Davide Scaramuzza. Institute of Neuroinformatics - a joint institute of the ETH Zurich and University of Zurich.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Faculty of Technical Sciences, University of Novi Sad</h4>
+
+              <span>Oct 2020 - Jul 2021</span>
+
+              <p class="timeline-text">
+                Field: Artificial Intelligence & Intelligent Systems.<br>
+                Thesis title: "An Effective Loss Function for Generating 3D Models from Single 2D Image without Rendering" (supervised by Dragan Ivetić, PhD).
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Faculty of Technical Sciences, University of Novi Sad</h4>
+
+              <span>Sep 2016 - Sep 2020</span>
+
+              <p class="timeline-text">
+                Bachelor with Honours in Electrical Engineering and Computer Science.<br>
+                Thesis title: "Usage of Neural Style Transfer with Color Preservation Optimization for generating art pieces" (supervised by Jelena Slivka, PhD).
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="publications" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>First author</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Collaborations</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>First author</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Collaborations</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="first author">
+              <a href="https://arxiv.org/abs/2304.13455/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ergo12_teaser.png" alt="ergo12_teaser" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">From Chaos Comes Order: Ordering Event Representations for Object Recognition and Detection</h3>
+
+                <p class="project-category">ICCV 2023 (Paris, France)</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="first author">
+              <a href="https://arxiv.org/abs/2103.03390/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/aiai2021.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">An Effective Loss Function for Generating 3D Models from Single 2D Image Without Rendering</h3>
+
+                <p class="project-category">AIAI 2021 (Crete, Greece) & Springer</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.9404202708133!2d8.545709477015883!3d47.41310327117282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b722bfa7f0d%3A0x85d737dffc98dafb!2sRobotics%20and%20Perception%20Group!5e0!3m2!1sen!2sch!4v1704988259750!5m2!1sen!2sch"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+
+        <div class="name" style="color:white;" title="Nikola Zubić">
+          <p>For inquiries, please send your emails to the appropriate address below:</p>
+          <p><span style="font-size: 0.8em;">zubic@ifi.uzh.ch (Academic queries),</span></p>
+          <p><span style="font-size: 0.8em;">nzubic@ethz.ch (Academic queries),</span></p>
+          <p><span style="font-size: 0.8em;">nikolazubic@protonmail.com (Personal queries).</span></p>
         </div>
+        
 
-        <br>
-        <br>
-
-        <div class="container-xxl heading" style=" width: 1034px;">
-            <h1>EXPERIENCE</h1>
-        </div>
-        <br>
-        <div class="container-xxl" style="width: 1034px;">
-            <div class="row row-cols-1 g-4">
-                <div class="col">
-                    <div class="card experience-card mb-1">
-                      <div class="row g-0">
-                        <div class="col-5">
-                            <div class="col d-flex align-items-center justify-content-center text-center" style="align-items: center; height: 200px">
-                                <a href="https://ai.ethz.ch/"><img src="assets/eth_ai_center.png" class="img-fluid" style="width: 75%"></a>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                          <div class="card-body">
-                            <h5 class="card-title">Associated Researcher</h5>
-                              <p class="card-text"><small class="text-muted">ETH AI Center<br>Since Apr 2023</small></p>
-                            <p class="card-text"></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card experience-card mb-1">
-                      <div class="row g-0">
-                        <div class="col-5">
-                            <div class="col d-flex align-items-center justify-content-center text-center" style="align-items: center; height: 160px">
-                                <a href="https://www.mit.edu/"><img src="assets/MIT-Logo.png" class="img-fluid" style="width: 60%"></a>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                          <div class="card-body">
-                            <h5 class="card-title">Research Intern</h5>
-                              <p class="card-text"><small class="text-muted">Massachusetts Institute of Technology (Cambridge, Massachusetts, United States)<br>Jun 2022 - Jul 2022</small></p>
-                              <p class="card-text">Worked on Deep Reinforcement Learning and Computer Vision, the project was on Policy-Guided Planning with application in the Real-World Robotics</a>.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card experience-card mb-1">
-                      <div class="row g-0">
-                        <div class="col-5">
-                            <div class="col d-flex align-items-center justify-content-center text-center" style="align-items: center; height: 200px">
-                                <a href="https://wonderdynamics.com/"><img src="assets/wonder-dynamics.png" class="img-fluid" style="width: 60%"></a>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                          <div class="card-body">
-                            <h5 class="card-title">Machine Learning Researcher</h5>
-                              <p class="card-text"><small class="text-muted">Wonder Dynamics (Los Angeles, California, United States)<br>Nov 2021 - May 2022</small></p>
-                            <p class="card-text">
-                              <ul>
-                                <li>Work on research and design of cutting-edge machine learning algorithms in the fields of visual effects, motion capturing, rendering, as well as in many other movie production areas</li>
-                                <li>Work on cutting-edge Computer Graphics techniques, Neural Rendering, and Numerical Optimization</li>
-                                <li>Design and build various neural network architectures: CNNs, RNNs, Transformers, Autoencoders</li>
-                                <li>Create tools and processes that aid in the production of visual effects by applying state-of-the-art computer vision and graphics algorithms</li>
-                            </ul>                            
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card experience-card mb-1">
-                      <div class="row g-0">
-                        <div class="col-5">
-                            <div class="col d-flex align-items-center justify-content-center" style="align-items: center; height: 200px">
-                                <a href="https://www.cam.ac.uk/"><img src="assets/cambridge_logo.jpg" class="img-fluid"></a>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                          <div class="card-body">
-                            <h5 class="card-title">Research Intern</h5>
-                              <p class="card-text"><small class="text-muted">University of Cambridge (Cambridge, England, United Kingdom)<br>Oct 2020 - Jun 2021</small></p>
-                            <p class="card-text">Research Intern Apprentice in the Computer Laboratory at the University of Cambridge. This internship under the supervision of Full Professor Pietro Lio resulted in the publication of a paper which I presented at the AIAI 2021 conference. Paper is a part of the book "Artificial Intelligence Applications and Innovations" by Springer.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card experience-card mb-1">
-                      <div class="row g-0">
-                        <div class="col-5">
-                            <div class="col d-flex align-items-center justify-content-center text-center" style="align-items: center; height: 200px">
-                                <a href="https://wellfound.com/company/esoter-studio"><img src="assets/esoter.jpg" class="img-fluid" style="width: 35%"></a>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                          <div class="card-body">
-                            <h5 class="card-title">Software Engineer</h5>
-                              <p class="card-text"><small class="text-muted">Esoter Studio (Novi Sad, Serbia)<br>Aug 2019 - Sep 2019</small></p>
-                            <p class="card-text">Application of machine learning in game development.</a></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card experience-card mb-1">
-                      <div class="row g-0">
-                        <div class="col-5">
-                            <div class="col d-flex align-items-center justify-content-center text-center" style="align-items: center; height: 200px">
-                                <a href="https://www.rt-rk.com/"><img src="assets/RT-RK.png" class="img-fluid" style="width: 60%"></a>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                          <div class="card-body">
-                            <h5 class="card-title">Student Assistant</h5>
-                              <p class="card-text"><small class="text-muted">RT-RK (Novi Sad, Serbia)<br>Feb 2019 - Jun 2019</small></p>
-                            <p class="card-text">Student demonstrator for courses: "Parallel Programming" and "System Programming 1".</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <h1 class="gradiant-effect" id="connect"> GET IN TOUCH </h1>
-        <br>
-        <br>
-        <div class="row">
-    <div class="col-3"></div>
-     <div class="col-2 text-center"><a href="mailto:zubic@ifi.uzh.ch"><i class="fa-regular fa-envelope fa-2xl" data-tippy-content="E-Mail"></i></a></div>
-     <div class="col-2 text-center"><a href="https://www.linkedin.com/in/nikola-zubi%C4%87-50458b18b/"><i class="fa-brands fa-linkedin fa-2xl" data-tippy-content="LinkedIn"></i></a></div>
-    <div class="col-2 text-center"><a href="https://github.com/nikolazubic/"><i class="fa-brands fa-github fa-2xl" data-tippy-content="GitHub"></i></a></div>
-    <div class="col-3"></div>
-</div>
-        <br><br>
-        <br><br>
-
-        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-
-        <script>
-            tippy('[data-tippy-content]', {
-                arrow: false,
-                inertia: true,
-                animation: 'scale',
-                theme: 'gradiant',
-                placement: 'bottom',
-            });
-        </script>
+      </article>
 
     </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
