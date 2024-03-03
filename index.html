@@ -369,31 +369,7 @@
             <li class="white-text hidden"><b>[01.09.2022]</b> I started my PhD in Computer Science at the Robotics and Perception Group.</li>
         </ul>
         <button id="toggle-button">Show More</button>
-
-        <script>
-          // Get the 'Show More'/'Hide Items' button and attach a click event listener
-          document.getElementById('toggle-button').addEventListener('click', function() {
-              // Use the 'hidden' class to toggle the visibility
-              var hiddenItems = document.querySelectorAll('.hidden');
-              // Check if we are currently showing the hidden items
-              var showingMore = this.textContent === 'Hide Items';
-              
-              if (showingMore) {
-                  // If we are currently showing all items, hide the ones that should be hidden
-                  hiddenItems.forEach(function(item) {
-                      item.style.display = 'none';
-                  });
-                  this.textContent = 'Show More';
-              } else {
-                  // If we are currently showing only the initial items, show all
-                  hiddenItems.forEach(function(item) {
-                      item.style.display = 'list-item'; // or 'block', 'inline-block', etc., as per your layout needs
-                  });
-                  this.textContent = 'Hide Items';
-              }
-          });
-      </script>
-      
+        
     </article>
     
 
@@ -718,6 +694,29 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    // Get the 'Show More'/'Hide Items' button and attach a click event listener
+    document.getElementById('toggle-button').addEventListener('click', function() {
+        // Use the 'hidden' class to toggle the visibility
+        var hiddenItems = document.querySelectorAll('.hidden');
+        // Check if we are currently showing the hidden items
+        var showingMore = this.textContent === 'Hide Items';
+        
+        if (showingMore) {
+            // If we are currently showing all items, hide the ones that should be hidden
+            hiddenItems.forEach(function(item) {
+                item.style.display = 'none';
+            });
+            this.textContent = 'Show More';
+        } else {
+            // If we are currently showing only the initial items, show all
+            hiddenItems.forEach(function(item) {
+                item.style.display = 'list-item'; // or 'block', 'inline-block', etc., as per your layout needs
+            });
+            this.textContent = 'Hide Items';
+        }
+    });
+  </script>
 
 </body>
 

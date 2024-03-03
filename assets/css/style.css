@@ -165,6 +165,66 @@ body { background: var(--smoky-black); }
   #REUSED STYLE
 \*-----------------------------------*/
 
+.white-text {
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  background-color: #007BFF; /* Pleasant blue background for contrast */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  margin: 10px 0; /* Spacing above and below the item */
+  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.white-text:hover {
+  background-color: #0056b3; /* Darker blue on hover for interactive feel */
+}
+
+/* Hide the extra list items initially */
+.news-item.hidden {
+  display: none;
+}
+
+/* Style for the 'Show More' button */
+#show-more {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#show-more:hover {
+    background-color: #0056b3;
+}
+
+/* Adjustments for the toggle functionality */
+.hidden {
+  display: none;
+}
+
+/* Style for the 'Show More'/'Hide Items' button */
+#toggle-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-button:hover {
+  background-color: #0056b3;
+}
+
 .sidebar,
 article {
   background: var(--eerie-black-2);
@@ -1871,66 +1931,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .social-list { justify-content: center; }
-
-  .white-text {
-    color: white;
-    padding: 10px;
-    display: inline-block;
-    background-color: #007BFF; /* Pleasant blue background for contrast */
-    border-radius: 5px; /* Rounded corners for a softer look */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
-    margin: 10px 0; /* Spacing above and below the item */
-    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
-  }
-
-  .white-text:hover {
-    background-color: #0056b3; /* Darker blue on hover for interactive feel */
-  }
-
-  /* Hide the extra list items initially */
-  .news-item.hidden {
-    display: none;
-  }
-
-  /* Style for the 'Show More' button */
-  #show-more {
-      background-color: #007BFF;
-      color: white;
-      padding: 10px 15px;
-      font-size: 14px;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      margin-top: 10px;
-      transition: background-color 0.3s ease;
-  }
-
-  #show-more:hover {
-      background-color: #0056b3;
-  }
-
-  /* Adjustments for the toggle functionality */
-  .hidden {
-    display: none;
-}
-
-/* Style for the 'Show More'/'Hide Items' button */
-#toggle-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 15px;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-#toggle-button:hover {
-    background-color: #0056b3;
-}
 
   /**
 	 * RESUME
