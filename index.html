@@ -180,15 +180,15 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>News</button>
           </li>
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Publications</button>
           </li>
-
+          
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
           <li class="navbar-item">
@@ -352,7 +352,169 @@
       </article>
 
 
+      <!--
+        - #NEWS
+      -->
 
+      <article class="news" data-page="news">
+        <header>
+            <h2 class="h2 article-title">News</h2>
+        </header>
+        
+        <ul>
+            <li class="white-text"><b>[26.02.2024]</b> "State Space Models for Event Cameras" has been accepted at CVPR 2024!</li>
+            <li class="white-text"><b>[24.05.2023]</b> "From Chaos Comes Order: Ordering Event Representations for Object Recognition and Detection" has been accepted to ICCV 2023!</li>
+            <li class="white-text"><b>[01.04.2023]</b> I joined ETH AI Center as an Associated Researcher.</li>
+            <!-- These items will be hidden initially -->
+            <li class="white-text hidden"><b>[01.09.2022]</b> I started my PhD in Computer Science at the Robotics and Perception Group.</li>
+        </ul>
+        <button id="toggle-button">Show More</button>
+
+        <script>
+          // Get the 'Show More'/'Hide Items' button and attach a click event listener
+          document.getElementById('toggle-button').addEventListener('click', function() {
+              // Use the 'hidden' class to toggle the visibility
+              var hiddenItems = document.querySelectorAll('.hidden');
+              // Check if we are currently showing the hidden items
+              var showingMore = this.textContent === 'Hide Items';
+              
+              if (showingMore) {
+                  // If we are currently showing all items, hide the ones that should be hidden
+                  hiddenItems.forEach(function(item) {
+                      item.style.display = 'none';
+                  });
+                  this.textContent = 'Show More';
+              } else {
+                  // If we are currently showing only the initial items, show all
+                  hiddenItems.forEach(function(item) {
+                      item.style.display = 'list-item'; // or 'block', 'inline-block', etc., as per your layout needs
+                  });
+                  this.textContent = 'Hide Items';
+              }
+          });
+      </script>
+      
+    </article>
+    
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="publications" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>First author</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Collaborations</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>First author</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Collaborations</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="first author">
+              <a href="https://arxiv.org/abs/2402.15584">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/CVPR2024_Zubic.png" alt="CVPR2024_Zubic" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">State Space Models for Event Cameras</h3>
+
+                <p class="project-category">CVPR 2024 (Seattle, Washington)</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="first author">
+              <a href="https://arxiv.org/abs/2304.13455/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ergo12_teaser.png" alt="ergo12_teaser" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">From Chaos Comes Order: Ordering Event Representations for Object Recognition and Detection</h3>
+
+                <p class="project-category">ICCV 2023 (Paris, France)</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="first author">
+              <a href="https://arxiv.org/abs/2103.03390/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/aiai2021.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">An Effective Loss Function for Generating 3D Models from Single 2D Image Without Rendering</h3>
+
+                <p class="project-category">AIAI 2021 (Crete, Greece) & Springer</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
 
       <!--
@@ -507,156 +669,6 @@
         </section>
 
       </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="publications" data-page="publications">
-
-        <header>
-          <h2 class="h2 article-title">Publications</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>First author</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Collaborations</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>First author</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Collaborations</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-            <li class="project-item  active" data-filter-item data-category="first author">
-              <a href="https://arxiv.org/abs/2402.15584">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/CVPR2024_Zubic.png" alt="CVPR2024_Zubic" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">State Space Models for Event Cameras</h3>
-
-                <p class="project-category">CVPR 2024 (Seattle, Washington)</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="first author">
-              <a href="https://arxiv.org/abs/2304.13455/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/ergo12_teaser.png" alt="ergo12_teaser" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">From Chaos Comes Order: Ordering Event Representations for Object Recognition and Detection</h3>
-
-                <p class="project-category">ICCV 2023 (Paris, France)</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="first author">
-              <a href="https://arxiv.org/abs/2103.03390/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/aiai2021.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">An Effective Loss Function for Generating 3D Models from Single 2D Image Without Rendering</h3>
-
-                <p class="project-category">AIAI 2021 (Crete, Greece) & Springer</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
 
       <!--
         - #CONTACT
