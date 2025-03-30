@@ -125,7 +125,9 @@
   box-sizing: border-box;
 }
 
-a { text-decoration: none; }
+a { text-decoration: none;
+  color: white;
+ }
 
 li { list-style: none; }
 
@@ -155,75 +157,15 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
-
-
-
+body { 
+  background: var(--smoky-black);
+  padding-top: 15px
+}
 
 
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
-
-.white-text {
-  color: white;
-  padding: 10px;
-  display: inline-block;
-  background-color: #007BFF; /* Pleasant blue background for contrast */
-  border-radius: 5px; /* Rounded corners for a softer look */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
-  margin: 10px 0; /* Spacing above and below the item */
-  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
-}
-
-.white-text:hover {
-  background-color: #0056b3; /* Darker blue on hover for interactive feel */
-}
-
-/* Hide the extra list items initially */
-.news-item.hidden {
-  display: none;
-}
-
-/* Style for the 'Show More' button */
-#show-more {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 15px;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-#show-more:hover {
-    background-color: #0056b3;
-}
-
-/* Adjustments for the toggle functionality */
-.hidden {
-  display: none;
-}
-
-/* Style for the 'Show More'/'Hide Items' button */
-#toggle-button {
-  background-color: #007BFF;
-  color: white;
-  padding: 10px 15px;
-  font-size: 14px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-
-#toggle-button:hover {
-  background-color: #0056b3;
-}
 
 .sidebar,
 article {
@@ -269,6 +211,10 @@ article {
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
 article { display: none; }
+
+ion-icon {
+  color:var(--orange-yellow-crayola);
+}
 
 article.active {
   display: block;
@@ -352,7 +298,13 @@ article.active {
   z-index: -1;
 }
 
+a:link {
+  color: white;
+}
 
+a:visited {
+  color: white;
+}
 
 
 
@@ -362,6 +314,7 @@ article.active {
 
 main {
   margin: 15px 12px;
+  margin-top: 60px;
   margin-bottom: 75px;
   min-width: 259px;
 }
@@ -516,13 +469,13 @@ main {
 
 .navbar {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsla(240, 1%, 17%, 1);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
-  border-radius: 12px 12px 0 0;
+  border-radius: 0px 0px 0px 0px;
   box-shadow: var(--shadow-2);
   z-index: 5;
 }
@@ -559,10 +512,9 @@ main {
 
 .about-text {
   color: var(--light-gray);
-  font-size: var(--fs-5);
+  font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
-  text-align: justify;
 }
 
 .about-text p { margin-bottom: 15px; }
@@ -602,6 +554,8 @@ main {
 }
 
 .service-icon-box { margin-bottom: 10px; }
+
+.service-icon-box
 
 .service-icon-box img { margin: auto; }
 
@@ -1291,6 +1245,35 @@ textarea.form-input::-webkit-resizer { display: none; }
 \*-----------------------------------*/
 
 /**
+ * responsive larger than 300px screen
+ */
+
+ @media (min-width: 330px) {
+
+  /**
+   * Navbar text size
+   */
+
+   .navbar-link { --fs-8: 12px; }
+
+}
+
+/**
+ * responsive larger than 370px screen
+ */
+
+ @media (min-width: 370px) {
+
+  /**
+   * Navbar text size
+   */
+
+   .navbar-link { --fs-8: 14px; }
+
+}
+
+
+/**
  * responsive larger than 450px screen
  */
 
@@ -1434,7 +1417,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #NAVBAR
    */
 
-  .navbar { border-radius: 20px 20px 0 0; }
+  .navbar { border-radius: 0 0 0 0; }
 
   .navbar-list { gap: 20px; }
 
@@ -1464,6 +1447,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 0;
     margin-top: 5px;
   }
+
+  .service-icon-box ion-icon {
+    color: var(--orange-yellow-crayola);
+  }
+
 
   .service-content-box { text-align: left; }
 
@@ -1932,10 +1920,40 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .social-list { justify-content: center; }
 
+
+
   /**
 	 * RESUME
 	 */
 
   .timeline-text { max-width: 700px; }
 
+}
+
+/* Use your own color variables or hex codes as needed */
+:root {
+  --primary-text: #ffffff;           /* White text */
+  --highlight-color: #e4bf36;       /* A gold-like color */
+  --background-color: #1a1a1a;      /* Dark background */
+  --transition-speed: 0.3s;
+}
+
+.toggle-btn {
+  display: inline-block;
+  margin: 1rem auto 0; /* Example: top spacing of 1rem, no left/right, no bottom */
+  background-color: transparent;                /* Transparent so it blends with dark BG */
+  color: var(--highlight-color);                /* Gold text color */
+  border: 1px solid var(--highlight-color);     /* Gold border */
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;                        /* Inherit your site’s font */
+  transition: background-color var(--transition-speed), 
+              color var(--transition-speed);
+}
+
+.toggle-btn:hover {
+  background-color: var(--highlight-color);    /* Gold background on hover */
+  color: #000;                                 /* Switch text to black on hover */
 }
