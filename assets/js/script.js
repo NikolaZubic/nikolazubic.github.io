@@ -119,6 +119,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
+const sidebarInfoMore = document.querySelector(".sidebar-info_more");
 
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
@@ -152,6 +153,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
       } else {
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
+      }
+    }
+
+    // NEW: Hide sidebar extra info on mobile unless "about" is active
+    if (window.innerWidth < 768) {
+      if (this.innerHTML.toLowerCase() === "about") {
+        sidebarInfoMore.style.display = "block";
+      } else {
+        sidebarInfoMore.style.display = "none";
       }
     }
 
