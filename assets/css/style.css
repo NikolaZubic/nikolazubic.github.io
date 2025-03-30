@@ -1957,3 +1957,17 @@ textarea.form-input::-webkit-resizer { display: none; }
   background-color: var(--highlight-color);    /* Gold background on hover */
   color: #000;                                 /* Switch text to black on hover */
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .sidebar-info_more {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .info_more-btn {
+    display: none !important;
+  }
+}
