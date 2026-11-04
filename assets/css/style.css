@@ -1024,6 +1024,15 @@ main {
 
 .project-item > a:hover img { transform: scale(1.1); }
 
+.project-img.project-img-diagram {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.project-img-diagram img { object-fit: contain; }
+
+.project-item > a:hover .project-img-diagram img { transform: none; }
+
 .project-title,
 .project-category { margin-left: 10px; }
 
